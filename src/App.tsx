@@ -13,6 +13,8 @@ const App = () => {
   const { dispatch } = useConfigContext();
   const isMobile = useMatchMedia('(max-width: 850px)');
 
+
+
   useEffect(() => {
     dispatch(updateConfig({ showCustomCursor: !isMobile }));
   }, [isMobile]);
