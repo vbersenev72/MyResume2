@@ -1,0 +1,22 @@
+.projectsPage {
+  display: flex;
+  row-gap: 20px;
+  flex-direction: column;
+
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-height: 90%;
+    grid-gap: 15px;
+
+    @media screen and (max-width: 1060px) {
+      grid-template-columns: 1fr;
+    }
+
+    .projectContainer {
+      width: 100%;
+    }
+  }
+}

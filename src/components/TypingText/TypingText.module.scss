@@ -1,0 +1,32 @@
+@import '@/index.scss';
+
+.typingTextContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: max-content;
+  column-gap: 5px;
+
+  span {
+    @include circlesText;
+    font-family: var(--font-primary);
+    font-size: 20px;
+    color: var(--text-primary);
+    animation: typingTextAnim 0.6s both;
+
+    @keyframes typingTextAnim {
+      0% {
+        opacity: 0;
+        filter: none;
+      }
+      50% {
+        opacity: 0.8;
+        filter: blur(10px);
+      }
+      100% {
+        opacity: 1;
+        filter: none;
+      }
+    }
+  }
+}

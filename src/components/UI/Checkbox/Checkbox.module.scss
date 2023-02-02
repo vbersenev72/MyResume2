@@ -1,0 +1,43 @@
+.checkBoxContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  $width: 50px;
+  $height: 25px;
+  $padding: 7px;
+
+  .checkBox {
+    width: $width;
+    height: $height;
+    border-radius: calc($width / 2);
+    background-color: var(--background-third);
+    position: relative;
+    padding: $padding;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: background-color 0.4s;
+
+    &[data-checked='true'] {
+      justify-content: flex-end;
+      background-color: var(--green);
+    }
+
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      appearance: none;
+    }
+
+    .point {
+      width: calc($width / 2 - $padding);
+      height: calc($height - $padding);
+      background-color: var(--text-primary);
+      border-radius: inherit;
+    }
+  }
+}

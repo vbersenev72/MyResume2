@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+@font-face {
+  src: url('./assets/fonts/HelveticaNeue-Medium.otf');
+  font-family: 'Helvetica Neue';
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: 2px;
+  scrollbar-color: var(--text-secondary) none;
+  user-select: none;
+  outline: none;
+}
+
+:root {
+  --background-primary: #000;
+  --background-alt: rgba(0, 0, 0, 0.9);
+  --background-secondary: #0b0b0b;
+  --background-third: #212121;
+  --background-ui: #181818;
+  --background-ui-hover: #2d2d2d;
+  --text-primary: #fff;
+  --text-secondary: rgba(255, 255, 255, 0.5);
+  --text-inactive: rgba(255, 255, 255, 0.1);
+  --text-green: #00fdcf;
+  --red: red;
+  --green: #54d254;
+  --font-primary: 'Work Sans', sans-serif;
+  --font-secondary: 'Helvetica Neue';
+}
+
+body {
+  color: var(--text-primary);
+  background-color: var(--background-primary);
+  font-family: var(--font-primary);
+  overflow-x: hidden;
+
+  &[data-cursor='false'] * {
+    cursor: none;
+  }
+}
+
+img,
+button,
+h1 {
+  user-select: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+input {
+  outline: none;
+}
+
+@media screen and (max-width: 700px) {
+  * {
+    filter: none !important;
+    backdrop-filter: none !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--text-secondary);
+}
+
+@mixin circlesText {
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    background-image: url('!/circles.svg');
+    background-size: 110% auto;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+@mixin underlineText {
+  position: relative;
+
+  &:after {
+    --deco-height: 0.3125em;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(var(--deco-height) * -0.625);
+    height: var(--deco-height);
+    background-size: auto 110%;
+    background-repeat: repeat-x;
+    background-position: 0;
+    background-image: url('!/underline.svg');
+  }
+}

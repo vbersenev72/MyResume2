@@ -1,0 +1,107 @@
+@import '@/index.scss';
+
+.aboutPage {
+  display: flex;
+  row-gap: 15px;
+  flex-direction: column;
+
+  .usernameContainer {
+    width: max-content;
+
+    .username {
+      line-height: 100%;
+
+      span {
+        font-family: var(--font-primary);
+        font-size: 27px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 100%;
+      }
+    }
+  }
+
+  .contentContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 10px;
+
+    .title {
+      font-size: 20px;
+      width: max-content;
+    }
+
+    .text {
+      font-size: 17px;
+      max-width: 750px;
+      text-align: justify;
+      //text-indent: 5px;
+      padding-left: 20px;
+
+      @media screen and (max-width: 800px) {
+        padding: 0;
+      }
+
+      span {
+        @include circlesText;
+        font-family: var(--font-secondary);
+        text-shadow: 0 0 20px var(--text-green);
+      }
+    }
+
+    .projectsContainer {
+      display: flex;
+      align-items: center;
+      //flex-direction: column;
+      padding-left: 20px;
+      column-gap: 40px;
+      margin-top: 10px;
+      width: 100%;
+
+      .projectsLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 2px solid var(--text-primary);
+        color: var(--text-primary);
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .skills {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      padding-left: 20px;
+      list-style-type: none;
+
+      .skillContainer {
+        display: flex;
+        row-gap: 10px;
+        flex-direction: column;
+        width: max-content;
+
+        .skillContents {
+          list-style-type: none;
+          padding-left: 20px;
+          display: flex;
+          row-gap: 2px;
+          flex-direction: column;
+
+          .skillContent {
+            display: flex;
+            align-items: center;
+            column-gap: 5px;
+            font-size: 17px;
+            font-family: var(--font-primary);
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.contactsPage {
+  display: flex;
+  row-gap: 15px;
+  flex-direction: column;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    .hoverContainer {
+      width: max-content;
+
+      .contact {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        font-family: var(--font-primary);
+        font-size: 21px;
+        font-weight: 600;
+        padding: 10px;
+        padding-inline: 15px;
+        border-radius: 10px;
+        transition: 0.3s;
+        color: var(--text-primary);
+        text-decoration: none;
+
+        &:hover {
+          background-color: var(--text-primary);
+          color: var(--background-primary);
+        }
+      }
+    }
+  }
+}

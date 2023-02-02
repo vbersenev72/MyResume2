@@ -1,0 +1,74 @@
+.cursor {
+  $size: 6px;
+  $size-separated: calc($size / 2);
+  $neg-size: calc($size-separated * -1);
+
+  $size: 6px;
+  position: fixed;
+  top: -100%;
+  left: -100%;
+  transform: translate($neg-size, $neg-size);
+  width: $size;
+  height: $size;
+  background-color: var(--text-primary);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  z-index: 10001;
+  mix-blend-mode: difference;
+}
+
+.follower {
+  --size: 40px;
+  $size-separated: calc(var(--size) / 2);
+  $neg-size: calc($size-separated * -1);
+
+  position: fixed;
+  top: -100%;
+  left: -100%;
+  transform: translate($neg-size, $neg-size);
+  width: var(--size);
+  height: var(--size);
+  //background: none;
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+  border: 3px solid var(--background-third);
+  z-index: 10000;
+  transition: transform 0.2s, height 0.2s, width 0.2s, background-color 0.2s,
+  backdrop-filter 0.2s;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &[data-hover='true'] {
+    mix-blend-mode: difference;
+    background-color: var(--text-primary);
+    backdrop-filter: blur(0);
+  }
+
+  .followerText {
+    position: absolute;
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: 22px;
+    pointer-events: none;
+    width: max-content;
+
+    &[data-position='top'] {
+      bottom: 102.5%;
+    }
+
+    &[data-position='bottom'] {
+      top: 102.5%;
+    }
+
+    &[data-position='left'] {
+      right: 115%;
+    }
+
+    &[data-position='right'] {
+      left: 115%;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.projectContainer {
+  width: 50%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  border: 2px solid var(--background-third);
+  border-radius: 15px;
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
+
+  .projectImage {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-ui);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: inherit;
+  }
+
+  &:active .projectContent,
+  &:focus .projectContent,
+  &:hover .projectContent {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .projectContent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    //height: 75%;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    background-color: var(--background-alt);
+    padding: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    //mix-blend-mode: difference;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    @media screen and (max-width: 1060px) {
+      .projectTitleContainer .projectTitle {
+        font-size: 20px;
+      }
+
+      .projectDescription {
+        display: none;
+      }
+    }
+
+    .projectTitleContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .projectTitle {
+        font-family: var(--font-primary);
+        font-weight: 500;
+        font-size: 25px;
+      }
+
+      .projectLinks {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: 10px;
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+
+    .projectDescription {
+      font-size: 17px;
+      text-align: justify;
+      //max-width: 750px;
+      //letter-spacing: -0.5px;
+    }
+
+    .projectTags {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      span {
+        padding: 5px;
+        padding-inline: 10px;
+        background-color: var(--background-ui);
+        border-radius: 4px;
+        mix-blend-mode: difference;
+      }
+    }
+  }
+}

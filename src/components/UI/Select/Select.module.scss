@@ -1,0 +1,50 @@
+.selectContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: var(--font-secondary);
+
+  .selectedVariant {
+    padding: 10px;
+    padding-inline: 15px;
+    width: 100%;
+    background-color: var(--background-ui);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-primary);
+
+    .arrowIcon {
+      transition: transform 0.3s;
+
+      &[data-active='true'] {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .selectVariantsContainer {
+    position: absolute;
+    top: calc(100% + 10px);
+    width: 100%;
+    background-color: var(--background-ui);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    min-height: 50px;
+
+    span {
+      border-radius: inherit;
+      background-color: inherit;
+      padding: 10px;
+      padding-inline: 15px;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: var(--background-ui-hover);
+      }
+    }
+  }
+}
