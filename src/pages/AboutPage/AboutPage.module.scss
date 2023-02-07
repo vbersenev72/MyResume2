@@ -46,7 +46,7 @@
       span {
         @include circlesText;
         font-family: var(--font-secondary);
-        text-shadow: 0 0 20px var(--text-green);
+        text-shadow: 0 0 0 var(--text-green);
       }
     }
 
