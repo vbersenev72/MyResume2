@@ -192,6 +192,6 @@ export const contacts: ContactProps[] = [
   {
     text: 'Vbersenev73@gmail.com',
     icon: <SiGmail />,
-    link: 'mailto:tntwnik@gmail.com',
+    link: 'mailto:Vbersenev73@gmail.com',
   },
 ];
