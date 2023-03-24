@@ -185,9 +185,9 @@ export const contacts: ContactProps[] = [
     link: 'https://github.com/vbersenev72/',
   },
   {
-    text: '@SuperParavozik2006',
+    text: '@heisenberg_1_3_3_7',
     icon: <SiTelegram />,
-    link: 'https://t.me/SuperParavozik2006',
+    link: 'https://t.me/heisenberg_1_3_3_7',
   },
   {
     text: 'Vbersenev73@gmail.com',
