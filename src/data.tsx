@@ -6,6 +6,7 @@ import {
   FaReact,
   FaVuejs,
   SiDiscord,
+  SiDocker,
   SiElectron,
   SiExpress,
   SiFramer,
@@ -26,6 +27,7 @@ import {
   SiNodedotjs,
   SiPostgresql,
   SiPug,
+  SiReact,
   SiRedux,
   SiSass,
   SiSequelize,
@@ -126,7 +128,7 @@ export const skills: SkillProps[] = [
       },
       {
         title: 'React-Context',
-        icon: <FaReact />,
+        icon: <SiReact/>
       },
       {
         title: 'React',
@@ -136,17 +138,24 @@ export const skills: SkillProps[] = [
     ],
   },
   {
-    title: 'Principles:',
+    title: 'Backend:',
     content: [
       {
-        title: 'DRY',
+        title: 'Express.js',
+        icon: <SiExpress/>
       },
       {
-        title: 'KISS',
+        title: 'Node.js',
+        icon: <SiNodedotjs/>
       },
       {
-        title: 'YAGNI',
+        title: 'MongoDB',
+        icon: <SiMongodb/>
       },
+      {
+        title: 'PostgreSQL',
+        icon: <SiPostgresql/>
+      }
     ],
   },
   {
@@ -160,10 +169,10 @@ export const skills: SkillProps[] = [
         title: 'Github',
         icon: <SiGithub />,
       },
-      // {
-      //   title: 'Docker',
-      //   icon: <SiDocker />,
-      // },
+      {
+        title: 'Docker',
+        icon: <SiDocker />,
+      },
       {
         title: 'Linux',
         icon: <SiLinux />,

@@ -9,7 +9,7 @@ import MouseHover from '@/components/MouseHover';
 import Link from '@/components/UI/Link';
 
 const introPageText =
-  "Hello 1000 world , my name is 1000 Vladislav B, i'm a Frontend React developer 1000 , let me show you little bit more information about me.";
+  "Hello 1000 world ! My name is 1000 Vladislav, i'm a Frontend developer 1000 , let me show you little bit more information about me.";
 
 const IntroPage = () => {
   const navigate = useNavigate();
