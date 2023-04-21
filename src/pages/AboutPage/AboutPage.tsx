@@ -31,7 +31,6 @@ const AboutPage = () => {
             <span>Frontend</span> direction, in the Frontend
             area I have quite a lot of experience in writing React applications,
             so now I position myself as a <span>React frontend developer</span>.
-            There is no commercial development experience.
           </p>
         </MouseHover>
       </div>

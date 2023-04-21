@@ -12,7 +12,7 @@ import { updateConfig } from '@/contexts/ConfigContext';
 const App = () => {
   const { dispatch } = useConfigContext();
   const isMobile = useMatchMedia('(max-width: 850px)');
-
+  console.log(isMobile)
 
 
   useEffect(() => {
@@ -21,7 +21,9 @@ const App = () => {
 
   return (
     <>
-      <Cursor />
+    {
+      !isMobile && <Cursor/>
+    }
       <Routing />
       <DevToolsModal />
     </>
