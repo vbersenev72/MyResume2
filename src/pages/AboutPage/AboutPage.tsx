@@ -25,12 +25,12 @@ const AboutPage = () => {
         <MouseHover>
           <p className={cl.text}>
             I'm a <span>young web developer</span> living in <span>Russia (Tyumen)</span>
-            , I devote most of my time to <span>developing</span> my own small
+            , I devote most of my time to <span>developing</span> commercial
             projects and <span>self-improvement</span>, I have been doing web
-            development for about <span>5 month</span>, during this time I tried{' '}
-            <span>Frontend</span> direction, in the Frontend
-            area I have quite a lot of experience in writing React applications,
-            so now I position myself as a <span>React frontend developer</span>.
+            development for about <span>9 month</span>, during this time I tried{' '}
+            <span>Web</span> direction, in the Web-development
+            area I have quite a lot of experience in writing React + Node.js applications,
+            so now I position myself as a <span>Node.js backend developer</span>.
           </p>
         </MouseHover>
       </div>

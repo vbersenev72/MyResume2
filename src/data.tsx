@@ -111,24 +111,12 @@ export const skills: SkillProps[] = [
         icon: <FaCss3 />,
       },
       {
-        title: 'SASS',
-        icon: <SiSass />,
-      },
-      {
         title: 'Javascript',
         icon: <SiJavascript />,
       },
       {
         title: 'Typescript',
         icon: <SiTypescript />,
-      },
-      {
-        title: 'Webpack',
-        icon: <SiWebpack />,
-      },
-      {
-        title: 'React-Context',
-        icon: <SiReact/>
       },
       {
         title: 'React',
