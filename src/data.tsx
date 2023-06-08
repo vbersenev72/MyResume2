@@ -50,42 +50,29 @@ export type ProjectProps = {
 
 export const projects: ProjectProps[] = [
   {
-    githubLink: 'https://github.com/vbersenev72/eng-flashcards',
-    title: 'Eng-Flashcards',
+    githubLink: 'https://github.com/vbersenev72/test-api',
+    title: 'PostgreSQL crud',
     description:
-      "Application for learning english language using interactive flashcards",
-    image: 'https://i.imgur.com/koxkLqI.jpg',
+      "Full CRUD-range PostgreSQL + Express.js",
+    image: 'https://i.imgur.com/0FB80Uh.jpeg',
     tags: [
-      'React',
-      'Typescript',
-      'React-Context',
-      'Axios',
+      'Node.js',
+      'Express.js',
+      'PostgreSQL',
     ],
   },
   {
-    githubLink: 'https://github.com/vbersenev72/Tic-Tac-Toe-Game',
-    title: 'Tic-Tac-Toe',
+    githubLink: 'https://github.com/vbersenev72/test-nano',
+    title: 'Test-task',
     description:
-      'Project game Tic-Tac-Toe game',
-    image: 'https://i.imgur.com/fFl8xfh.jpg',
+      'Одно из тестовых :-)',
+    image: 'https://i.imgur.com/Gf4PtYI.jpeg',
     tags: [
-      'React',
-      'Typescript',
+      'Node.js',
+      'PostgreSQL',
+      'JavaScript'
     ],
-  },
-  {
-    githubLink: 'https://github.com/vbersenev72/Movie-List',
-    title: 'ReactLight-TV',
-    description:
-      'ReactLight-TV Prototype of an online cinema',
-    image: 'https://i.imgur.com/CMvsBE6.jpg',
-    tags: [
-      'React',
-      'Typescript',
-      'Axios',
-      'Json server',
-    ],
-   },
+  }
 ];
 
 export type SkillContentProps = {
