@@ -63,12 +63,25 @@ export const projects: ProjectProps[] = [
   },
   {
     githubLink: 'https://github.com/vbersenev72/test-nano',
-    title: 'Test-task',
+    title: 'Express.js + PostgreSQL',
     description:
       'Одно из тестовых :-)',
     image: 'https://i.imgur.com/Gf4PtYI.jpeg',
     tags: [
       'Node.js',
+      'PostgreSQL',
+      'JavaScript'
+    ],
+  },
+  {
+    githubLink: 'https://github.com/vbersenev72/test-div',
+    title: 'Nest.js + PostgreSQL',
+    description:
+      'Одно из тестовых :-)',
+    image: 'https://i.imgur.com/zJ8mx9N.png',
+    tags: [
+      'Node.js',
+      'Nest.js',
       'PostgreSQL',
       'JavaScript'
     ],
@@ -86,6 +99,31 @@ export type SkillProps = {
 };
 
 export const skills: SkillProps[] = [
+  {
+    title: 'Backend:',
+    content: [
+      {
+        title: 'Express.js',
+        icon: <SiExpress/>
+      },
+      {
+        title: 'Nest.js',
+        icon: <SiNestjs/>
+      },
+      {
+        title: 'Node.js',
+        icon: <SiNodedotjs/>
+      },
+      {
+        title: 'MongoDB',
+        icon: <SiMongodb/>
+      },
+      {
+        title: 'PostgreSQL',
+        icon: <SiPostgresql/>
+      }
+    ],
+  },
   {
     title: 'Frontend:',
     content: [
@@ -112,27 +150,7 @@ export const skills: SkillProps[] = [
 
     ],
   },
-  {
-    title: 'Backend:',
-    content: [
-      {
-        title: 'Express.js',
-        icon: <SiExpress/>
-      },
-      {
-        title: 'Node.js',
-        icon: <SiNodedotjs/>
-      },
-      {
-        title: 'MongoDB',
-        icon: <SiMongodb/>
-      },
-      {
-        title: 'PostgreSQL',
-        icon: <SiPostgresql/>
-      }
-    ],
-  },
+
   {
     title: 'Devops:',
     content: [
@@ -174,7 +192,7 @@ export const contacts: ContactProps[] = [
     link: 'https://t.me/heisenberg_1_3_3_7',
   },
   {
-    text: 'Vbersenev73@gmail.com',
+    text: 'Vbersenev72@gmail.com',
     icon: <SiGmail />,
     link: 'mailto:Vbersenev73@gmail.com',
   },
