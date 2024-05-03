@@ -50,42 +50,28 @@ export type ProjectProps = {
 
 export const projects: ProjectProps[] = [
   {
-    githubLink: 'https://github.com/vbersenev72/test-api',
-    title: 'PostgreSQL crud',
+    githubLink: 'https://github.com/vbersenev72/stockfishApi',
+    title: 'Stockfish 14 UCI-integration',
     description:
-      "Full CRUD-range PostgreSQL + Express.js",
-    image: 'https://i.imgur.com/0FB80Uh.jpeg',
+      "API for interacting with Stockfish (chess engine)",
+    image: 'https://images.chesscomfiles.com/uploads/v1/news/1211845.6d45f501.668x375o.65fd5544dbcd@2x.png',
     tags: [
       'Node.js',
       'Express.js',
-      'PostgreSQL',
+      'Typescript',
     ],
   },
   {
-    githubLink: 'https://github.com/vbersenev72/test-nano',
-    title: 'Express.js + PostgreSQL',
+    githubLink: 'https://github.com/vbersenev72/HTTPulse.js',
+    title: 'HTTPulse.js',
     description:
-      'Одно из тестовых :-)',
-    image: 'https://i.imgur.com/Gf4PtYI.jpeg',
+      'HTTP Typescript Framework (in progress)',
+    image: '',
     tags: [
       'Node.js',
-      'PostgreSQL',
-      'JavaScript'
+      'Typescript',
     ],
   },
-  {
-    githubLink: 'https://github.com/vbersenev72/test-div',
-    title: 'Nest.js + PostgreSQL',
-    description:
-      'Одно из тестовых :-)',
-    image: 'https://i.imgur.com/zJ8mx9N.png',
-    tags: [
-      'Node.js',
-      'Nest.js',
-      'PostgreSQL',
-      'JavaScript'
-    ],
-  }
 ];
 
 export type SkillContentProps = {

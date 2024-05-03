@@ -21,7 +21,7 @@ const NavLink: FC<INavLink> = ({ link }) => {
 
   return (
     <MouseHover onClick={() => navigate(link.href)} className={cl.link}>
-      <span data-active={link.href === currentPage}>{link.text}</span>
+      <p data-active={link.href === currentPage}>{link.text}</p>
       {link.href === currentPage && (
         <motion.div layoutId={'navline'} className={cl.navline} />
       )}
