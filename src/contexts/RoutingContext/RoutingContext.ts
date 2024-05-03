@@ -11,7 +11,7 @@ export interface IRoutingContext {
 
 export const initialState: IRoutingContext = {
   state: {
-    currentPage: import.meta.env.DEV ? 'AboutPage' : 'IntroPage',
+    currentPage: 'IntroPage',
   },
   dispatch: () => {},
 };
