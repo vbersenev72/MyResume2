@@ -57,7 +57,7 @@ export const projects: ProjectProps[] = [
     image: 'https://img.freepik.com/premium-vector/qm-letter-logo-design-with-circle-shape-qm-circle-cube-shape-logo-design-qm-monogram-busin_629210-928.jpg',
     tags: [
       'Node.js',
-      'NoDependecies',
+      'NoDependencies',
       'chess-engine',
       'Typescript',
     ],
