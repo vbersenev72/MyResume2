@@ -50,14 +50,15 @@ export type ProjectProps = {
 
 export const projects: ProjectProps[] = [
   {
-    githubLink: 'https://github.com/vbersenev72/stockfishApi',
-    title: 'Stockfish 14 UCI-integration',
+    githubLink: 'https://github.com/vbersenev72/QM-chess',
+    title: 'QM - chess engine',
     description:
-      "API for interacting with Stockfish (chess engine)",
-    image: 'https://images.chesscomfiles.com/uploads/v1/news/1211845.6d45f501.668x375o.65fd5544dbcd@2x.png',
+      "QuickMove - chess engine. TypeScript core logic",
+    image: 'https://img.freepik.com/premium-vector/qm-letter-logo-design-with-circle-shape-qm-circle-cube-shape-logo-design-qm-monogram-busin_629210-928.jpg',
     tags: [
       'Node.js',
-      'Express.js',
+      'NoDependecies',
+      'chess-engine',
       'Typescript',
     ],
   },
@@ -65,8 +66,8 @@ export const projects: ProjectProps[] = [
     githubLink: 'https://github.com/vbersenev72/HTTPulse.js',
     title: 'HTTPulse.js',
     description:
-      'HTTP Typescript Framework (in progress)',
-    image: '',
+      'HTTP Typescript Framework',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT17aug6sTeQ2UAUSnqpeCBtnp59qHC4hWE_w&s',
     tags: [
       'Node.js',
       'Typescript',
