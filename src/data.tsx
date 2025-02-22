@@ -15,6 +15,7 @@ import {
   SiGithubactions,
   SiGmail,
   SiGulp,
+  SiHabr,
   SiJavascript,
   SiJquery,
   SiLess,
@@ -169,18 +170,23 @@ export type ContactProps = {
 
 export const contacts: ContactProps[] = [
   {
-    text: '@Vbersenev72',
+    text: 'Github',
     icon: <SiGithub />,
     link: 'https://github.com/vbersenev72/',
   },
   {
-    text: '@heisenberg_1_3_3_7',
+    text: 'Telegram',
     icon: <SiTelegram />,
     link: 'https://t.me/heisenberg_1_3_3_7',
   },
   {
-    text: 'Vbersenev72@gmail.com',
+    text: 'Email',
     icon: <SiGmail />,
     link: 'mailto:Vbersenev73@gmail.com',
+  },
+  {
+    text: 'My Habr.com Profile',
+    icon: <SiHabr />,
+    link: 'https://habr.com/ru/users/vbersenev72',
   },
 ];
